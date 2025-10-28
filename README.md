@@ -1,4 +1,4 @@
-# Apple SmartHome Bridge - Kubernetes Multi-Tenant Platform
+# Custom Apple SmartHome Bridge
 
 **TBZ Höhere Fachschule für Technik Zürich**  
 **Student:** David Unterguggenberger | **Klasse:** ITCNE24 - 4. Semesterarbeit  
@@ -47,7 +47,7 @@ Es hat sich rumgesprochen und 50+ Nachbarn haben sich innerhalb von 2 Tagen geme
 ### Die Lösung
 
 Diese Arbeit baut eine **Kubernetes-Infrastruktur**, die:
-- Automatisch neue Apartments deployed (unter 5 Minuten via Git-Push)
+- Automatisch neue Apartments deployed
 - Credentials sicher verschlüsselt (Sealed Secrets)
 - Strict isoliert (Namespace pro Apartment)
 - Einfach zu warten ist (GitOps mit ArgoCD)
