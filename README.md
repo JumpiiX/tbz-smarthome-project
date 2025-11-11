@@ -63,6 +63,37 @@ Diese Arbeit baut eine **Kubernetes-Infrastruktur**, die:
 
 ---
 
+## SEUSAG-Diagramm
+
+![SEUSAG Diagramm](docs/images/seusag-diagram.svg)
+
+### SEUSAG-Diagramm Beschreibung
+
+Das SEUSAG-Diagramm zeigt die Systemarchitektur des Multi-Tenant Apple HomeKit Bridge Systems mit allen Schnittstellen und Komponenten.
+
+
+#### Systemkomponenten
+
+**Externe Umgebung:**
+- Entwickler (MacBook)
+- GitHub Repository
+- Endbenutzer (iPhone/Apple Devices)
+- KNX SmartHome System (Tivoli Garten)
+
+**Projektumgebung / Hetzner Server:**
+- Kubernetes Cluster (kind oder k3s)
+- ArgoCD Controller
+- Sealed Secrets Controller
+- Ingress Controller (optional)
+
+**Pro Apartment (Namespace):**
+- Rust Container (SmartHome Bridge)
+- SealedSecret (verschlüsselte KNX Credentials)
+- Kubernetes Secret (entschlüsselt)
+- Persistent Volume (chrome_data/)
+
+---
+  
 ## Tech-Stack
 
 **Infrastructure:** Kubernetes (kind + Hetzner), ArgoCD, Sealed Secrets  
