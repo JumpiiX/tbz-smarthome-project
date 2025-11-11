@@ -318,7 +318,6 @@ Story 1 von Must-Have auf Nice-to-Have verschoben und pragmatische Lösung imple
 |--------|---------|----------|
 | Story Points | 49 | 49 |
 | Stories | 8 | 8 |
-| Sprint Goal | Erreicht | Ja |
 
 **MVP erreicht:** Software läuft production-ready auf Hetzner.
 
