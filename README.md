@@ -1,4 +1,7 @@
-# Custom Apple SmartHome Bridge
+$$
+{\LARGE \textbf{\color{orange} Custom Apple SmartHome Bridge}}
+$$
+
 
 **TBZ Höhere Fachschule für Technik Zürich**  
 **Student:** David Unterguggenberger | **Klasse:** ITCNE24 - 4. Semesterarbeit  
