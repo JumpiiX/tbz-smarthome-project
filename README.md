@@ -68,7 +68,7 @@ Diese Arbeit baut eine **Kubernetes-Infrastruktur**, die:
 
 ## SEUSAG-Diagramm
 
-![SEUSAG Diagramm](docs/images/seusag-diagram.svg)
+![SEUSAG Diagramm](docs/images/seusag-diagram.png)
 
 ### SEUSAG-Diagramm Beschreibung
 
