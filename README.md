@@ -359,30 +359,7 @@ Story 1 von Must-Have auf Nice-to-Have verschoben und pragmatische Lösung imple
 
 ## Sprint 1 Retrospektive
 
-### Keep (Beibehalten)
-
-- Video-Updates für Stakeholder
-- Proaktive Kommunikation mit Dozenten
-- Pragmatische Lösungsansätze
-
-### More (Mehr davon)
-
-- Automatisierte Tests
-- Dokumentation während der Arbeit
-
-### Less (Weniger davon)
-
-- Zeit für X11 Debugging (11 Versuche waren zu viel)
-- Perfektionismus bei Configs
-
-### Stop (Aufhören)
-
-- Firewall ohne Test aktivieren
-
-### Start (Neu beginnen)
-
-- Estimate-Field statt Labels (ab Sprint 2)
-- Regelmässige Backups
+![SEUSAG Diagramm](docs/images/sprint1retro.png)
 
 ---
 
