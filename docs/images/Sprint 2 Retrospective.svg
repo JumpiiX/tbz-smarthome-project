@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 900">
+  <!-- Background -->
+  <rect width="1000" height="900" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="500" y="40" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Sprint 2 Retrospektive - Starfish Template
+  </text>
+  <text x="500" y="70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#666">
+    18.11 - 15.12.2025 | Kubernetes &amp; Multi-Tenant Infrastructure
+  </text>
+  
+  <!-- Center circle -->
+  <circle cx="500" cy="480" r="80" fill="#4A90E2" opacity="0.2"/>
+  <text x="500" y="475" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Sprint 2</text>
+  <text x="500" y="495" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666">Retrospektive</text>
+  
+  <!-- Keep (Top) - Green -->
+  <path d="M 500 400 L 450 220 L 500 160 L 550 220 Z" fill="#4CAF50" opacity="0.15"/>
+  <circle cx="500" cy="180" r="12" fill="#4CAF50"/>
+  <text x="500" y="145" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#4CAF50">KEEP</text>
+  
+  <text x="500" y="250" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1a1a1a">• k3s Setup simpel</text>
+  <text x="500" y="270" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1a1a1a">• Sealed Secrets perfekt</text>
+  <text x="500" y="290" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1a1a1a">• Helm Charts = einfach</text>
+  <text x="500" y="310" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1a1a1a">• Monitoring-First Ansatz</text>
+  <text x="500" y="330" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#1a1a1a">• 101 Apartments stabil</text>
+  
+  <!-- More (Top Right) - Blue -->
+  <path d="M 580 400 L 780 280 L 820 330 L 680 440 Z" fill="#2196F3" opacity="0.15"/>
+  <circle cx="800" cy="305" r="12" fill="#2196F3"/>
+  <text x="800" y="265" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#2196F3">MORE</text>
+  
+  <text x="750" y="350" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• K8s Best Practices</text>
+  <text x="750" y="370" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  recherchieren</text>
+  <text x="750" y="395" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Grafana Dashboards</text>
+  <text x="750" y="415" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  nutzen</text>
+  <text x="750" y="440" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Automatisierte Tests</text>
+  
+  <!-- Less (Bottom Right) - Orange -->
+  <path d="M 580 560 L 680 680 L 640 730 L 520 620 Z" fill="#FF9800" opacity="0.15"/>
+  <circle cx="660" cy="705" r="12" fill="#FF9800"/>
+  <text x="720" y="745" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#FF9800">LESS</text>
+  
+  <text x="650" y="600" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Docker Image Size</text>
+  <text x="650" y="620" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  Optimization (zu viel Zeit)</text>
+  <text x="650" y="645" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Prometheus Config</text>
+  <text x="650" y="665" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  Debugging Zeit</text>
+  
+  <!-- Stop (Bottom Left) - Red -->
+  <path d="M 420 560 L 320 680 L 360 730 L 480 620 Z" fill="#F44336" opacity="0.15"/>
+  <circle cx="340" cy="705" r="12" fill="#F44336"/>
+  <text x="280" y="745" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#F44336">STOP</text>
+  
+  <text x="250" y="600" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Pods ohne Resource</text>
+  <text x="250" y="620" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  Limits starten</text>
+  <text x="250" y="645" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Chrome Memory Issues</text>
+  <text x="250" y="665" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  ignorieren</text>
+  
+  <!-- Start (Top Left) - Purple -->
+  <path d="M 420 400 L 220 280 L 180 330 L 320 440 Z" fill="#9C27B0" opacity="0.15"/>
+  <circle cx="200" cy="305" r="12" fill="#9C27B0"/>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#9C27B0">START</text>
+  
+  <text x="150" y="350" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Monitoring von</text>
+  <text x="150" y="370" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  Anfang an</text>
+  <text x="150" y="395" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Resource Limits</text>
+  <text x="150" y="415" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">  grosszügig setzen</text>
+  <text x="150" y="440" font-family="Arial, sans-serif" font-size="13" text-anchor="start" fill="#1a1a1a">• Helm Tests schreiben</text>
+  
+  <!-- Stats Box -->
+  <rect x="50" y="800" width="900" height="80" fill="#ffffff" stroke="#e0e0e0" stroke-width="2" rx="8"/>
+  <text x="500" y="830" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Sprint 2 Highlights
+  </text>
+  <text x="500" y="855" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#666">
+    55 Story Points | 101 Apartments deployed | 99.7% Uptime | Full Monitoring Stack | Sealed Secrets
+  </text>
+  
+  <!-- Legend -->
+  <g transform="translate(50, 120)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666">Starfish Template:</text>
+    <circle cx="10" cy="20" r="5" fill="#4CAF50"/>
+    <text x="25" y="25" font-family="Arial, sans-serif" font-size="11" fill="#666">Keep - Was gut lief</text>
+    <circle cx="10" cy="40" r="5" fill="#2196F3"/>
+    <text x="25" y="45" font-family="Arial, sans-serif" font-size="11" fill="#666">More - Mehr davon</text>
+    <circle cx="10" cy="60" r="5" fill="#FF9800"/>
+    <text x="25" y="65" font-family="Arial, sans-serif" font-size="11" fill="#666">Less - Weniger davon</text>
+    <circle cx="10" cy="80" r="5" fill="#F44336"/>
+    <text x="25" y="85" font-family="Arial, sans-serif" font-size="11" fill="#666">Stop - Aufhören</text>
+    <circle cx="10" cy="100" r="5" fill="#9C27B0"/>
+    <text x="25" y="105" font-family="Arial, sans-serif" font-size="11" fill="#666">Start - Neu beginnen</text>
+  </g>
+</svg>
