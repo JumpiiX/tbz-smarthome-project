@@ -799,7 +799,7 @@ Load-Test mit 100 simulierten Apartments:
 
 ## Sprint 2 Retrospektive
 
-![Sprint 2 Retrospektive](docs/images/Sprint 2 Retrospective.svg)
+![Sprint 2 Retrospektive](docs/images/Sprint2Retrospective.svg)
 
 ---
 
