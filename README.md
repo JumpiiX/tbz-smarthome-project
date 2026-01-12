@@ -913,7 +913,7 @@ Automatisches Backup-System wurde erfolgreich implementiert, um bei Server-Ausfa
 
 **Status:** Done
 
-Umfangreiche Security-Maßnahmen implementiert für Production-Grade Sicherheit.
+Umfangreiche Security-Massnahmen implementiert für Production-Grade Sicherheit.
 
 **Story Points:** 8
 
