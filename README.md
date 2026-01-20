@@ -148,7 +148,7 @@ Das SEUSAG-Diagramm zeigt die Systemarchitektur des Multi-Tenant Apple HomeKit B
 
 ## Sprint-Übersicht
 
-![Sprint Burndown Chart](docs/images/sprint-burndown-simple.svg)
+![Sprint Burndown Chart](docs/images/sprint-burndown-chart.svg)
 
 | Sprint | Zeitraum | Ziel |
 |--------|----------|------|
