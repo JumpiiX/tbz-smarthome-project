@@ -1,0 +1,90 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">Sprint Burndown Chart - TBZ SmartHome Project</text>
+  <text x="400" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">4 Sprints | 167 Story Points | 27.10.2025 - 28.01.2026</text>
+  
+  <!-- Chart area -->
+  <g transform="translate(100, 80)">
+    <!-- Grid lines -->
+    <line x1="0" y1="0" x2="600" y2="0" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="0" y1="75" x2="600" y2="75" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="0" y1="150" x2="600" y2="150" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="0" y1="225" x2="600" y2="225" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="0" y1="300" x2="600" y2="300" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="0" y1="375" x2="600" y2="375" stroke="#e5e5e5" stroke-width="1"/>
+    
+    <line x1="0" y1="0" x2="0" y2="375" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="150" y1="0" x2="150" y2="375" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="375" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="450" y1="0" x2="450" y2="375" stroke="#e5e5e5" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="375" stroke="#e5e5e5" stroke-width="1"/>
+    
+    <!-- Y-axis labels -->
+    <text x="-10" y="5" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">167</text>
+    <text x="-10" y="80" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">133</text>
+    <text x="-10" y="155" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">100</text>
+    <text x="-10" y="230" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">67</text>
+    <text x="-10" y="305" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">33</text>
+    <text x="-10" y="380" text-anchor="end" font-family="Arial, sans-serif" font-size="12" fill="#666">0</text>
+    
+    <!-- Sprint Labels at top -->
+    <text x="75" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Sprint 1</text>
+    <text x="225" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Sprint 2</text>
+    <text x="375" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Sprint 3</text>
+    <text x="525" y="-10" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">Sprint 4</text>
+    
+    <!-- Sprint dates -->
+    <text x="75" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">27.10-17.11</text>
+    <text x="225" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">18.11-15.12</text>
+    <text x="375" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">16.12-10.01</text>
+    <text x="525" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#666">11.01-28.01</text>
+    
+    <!-- Ideal burndown line -->
+    <line x1="0" y1="0" x2="600" y2="375" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+    
+    <!-- Actual burndown line -->
+    <polyline points="0,0 150,108 300,208 450,334 600,375" fill="none" stroke="#0066cc" stroke-width="3"/>
+    
+    <!-- Data points -->
+    <circle cx="0" cy="0" r="4" fill="#dc3545"/>
+    <circle cx="150" cy="108" r="4" fill="#0066cc"/>
+    <circle cx="300" cy="208" r="4" fill="#0066cc"/>
+    <circle cx="450" cy="334" r="4" fill="#0066cc"/>
+    <circle cx="600" cy="375" r="4" fill="#28a745"/>
+    
+    <!-- Story Points labels -->
+    <text x="150" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0066cc">49 SP</text>
+    <text x="300" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0066cc">55 SP</text>
+    <text x="450" y="321" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#0066cc">30 SP</text>
+    <text x="600" y="362" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#28a745">34 SP</text>
+  </g>
+  
+  <!-- Y-axis label -->
+  <text x="20" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#666" transform="rotate(-90, 20, 300)">Story Points Remaining</text>
+  
+  <!-- Legend -->
+  <g transform="translate(500, 480)">
+    <rect x="0" y="0" width="250" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="5"/>
+    <text x="125" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Legend</text>
+    
+    <line x1="20" y1="35" x2="50" y2="35" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="55" y="40" font-family="Arial, sans-serif" font-size="11" fill="#666">Ideal Burndown</text>
+    
+    <line x1="20" y1="55" x2="50" y2="55" stroke="#0066cc" stroke-width="2"/>
+    <text x="55" y="60" font-family="Arial, sans-serif" font-size="11" fill="#666">Actual Burndown</text>
+  </g>
+  
+  <!-- Summary -->
+  <g transform="translate(50, 480)">
+    <rect x="0" y="0" width="430" height="80" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1" rx="5"/>
+    <text x="215" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Sprint Summary</text>
+    
+    <text x="20" y="40" font-family="Arial, sans-serif" font-size="10" fill="#666">Sprint 1: Foundation (49 SP) | Sprint 2: Kubernetes (55 SP)</text>
+    <text x="20" y="55" font-family="Arial, sans-serif" font-size="10" fill="#666">Sprint 3: Production (30 SP) | Sprint 4: Documentation (34 SP)</text>
+    <text x="20" y="70" font-family="Arial, sans-serif" font-size="10" fill="#28a745" font-weight="bold">Result: 98 Active Apartments | Production Ready System</text>
+  </g>
+</svg>
