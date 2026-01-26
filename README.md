@@ -65,6 +65,81 @@ Diese Semesterarbeit entwickelt eine Kubernetes-basierte Plattform für eine App
 
 Die Bridge ist in Rust geschrieben und ermöglicht es Bewohnern, ihre SmartHome-Geräte über Siri, die Home App und andere Apple-Geräte zu steuern - ohne den Umweg über eine Website mit Login.
 
+### Rust Bridge - Technische Implementation
+
+Die Core-Application ist eine moderne Rust-Bridge mit folgender Architektur:
+
+#### Hauptkomponenten
+
+**KNX-Client (`knx_client.rs`):**
+- **Headless Chrome Integration** mit `headless_chrome` crate für OAuth-Login
+- **Session Management** mit persistenter `chrome_data/` für automatische Re-Logins  
+- **Auto-Discovery Engine** findet automatisch alle KNX-Devices über HTML-Parsing
+- **Anti-Bot-Detection** mit User-Agent Spoofing und WebDriver Property Hiding
+
+```rust
+// Device Auto-Discovery mit HTML Scraping
+async fn discover_page_devices(&self, page: &str) -> Result<Vec<Device>> {
+    let document = Html::parse_document(&html);
+    let element_selector = Selector::parse(".visu-element").unwrap();
+    
+    for element in document.select(&element_selector) {
+        let device_type = Self::detect_device_type(classes, &name);
+        // Light, Dimmer, WindowCovering, TemperatureSensor, Fan, Scene
+    }
+}
+```
+
+**Device Management (`device.rs`):**
+- **Typisierte Device States** für verschiedene KNX-Gerätetypen
+- **State Machine** für On/Off, Dimmer, WindowCovering, Temperature
+- **Device Registry** mit HashMap-basierter effizienter Geräteverwaltung
+
+```rust
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum DeviceType {
+    Light, Dimmer, WindowCovering, TemperatureSensor, Fan, Scene, Switch
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub enum DeviceState {
+    OnOff(bool),
+    Brightness { on: bool, level: u8 },
+    WindowCovering { position: u8, state: WindowCoveringState },
+    Temperature(f32),
+    FanSpeed(u8),
+}
+```
+
+**HTTP API Server (`api_server.rs`):**
+- **Axum-basierter REST API** für HomeKit-Integration
+- **Async Command Handling** für parallel device commands
+- **CORS-Support** für Web-Integration
+
+#### Tech-Stack Dependencies
+
+```toml
+# Core Web & HTTP
+reqwest = "0.11"     # HTTP client für KNX-Website Integration
+axum = "0.7"         # Modern async web framework
+tower-http = "0.5"   # CORS middleware
+
+# HTML Parsing & Browser Automation  
+scraper = "0.19"           # Fast HTML parsing für device discovery
+headless_chrome = "1.0"    # Chrome automation für OAuth login
+
+# Async Runtime & Serialization
+tokio = "1.35"       # Async runtime mit full features
+serde = "1.0"        # JSON/TOML serialization
+```
+
+**Warum Rust?**
+- **Memory Safety** ohne Garbage Collector - kritisch für 100+ parallel laufende Container
+- **Async Performance** mit Tokio für concurrent device commands 
+- **Strong Typing** verhindert Runtime-Errors bei KNX-Device-States
+- **Small Container Images** - Rust Binary ist nur ~20MB vs. Node.js ~200MB
+- **Zero-Cost Abstractions** für Multi-Tenant Performance bei Scale
+
 ---
 
 ## Problemstellung
